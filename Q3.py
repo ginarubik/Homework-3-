@@ -2,6 +2,7 @@
  ## if the dictionary structure grows in depth with more nested elements, the time complexity could be higher than O(1)
  ## and the space complexity is not solely tied to a linear 'n' as in the case of iterating through a fixed-sized input.
 
+
 baseURL = 'https://codefirstgirls.com/'
 currentPath = []
 
@@ -23,7 +24,7 @@ while True:
     else:
         currentPath.append(nextPage)
 
-    print(f"You are currently on the URL {baseURL + '/'.join(currentPath)}")
+    print(f"You are currently on the URL {baseURL + '/'.join(currentPath[1:])}")
     print(f"Where are you clicking?")
 
     options = pages
@@ -39,3 +40,4 @@ while True:
     if nextPage != 'exit':
         continue
     break
+
