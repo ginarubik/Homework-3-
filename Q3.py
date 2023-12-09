@@ -40,4 +40,3 @@ while True:
     if nextPage != 'exit':
         continue
     break
-
