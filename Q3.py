@@ -1,4 +1,6 @@
-# Time and Space complexity O(n)
+# Time and Space complexity O(n), but not strictly:
+ ## if the dictionary structure grows in depth with more nested elements, the time complexity could be higher than O(1)
+ ## and the space complexity is not solely tied to a linear 'n' as in the case of iterating through a fixed-sized input.
 
 baseURL = 'https://codefirstgirls.com/'
 currentPath = []
